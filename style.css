@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+
+body {
+  width: 100%;
+  text-align: center;
+  font-family: lobster;
+}
+.background {
+  background-image: url(https://images.unsplash.com/photo-1584109807991-ebfcd80112a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+.header-style {
+  position: sticky;
+  top: 0;
+  background-color: #64769c;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 100%;
+  margin: 0 vh;
+  z-index: 1;
+}
+
+@media only screen and (width: 600px) {
+  max-width: 100%;
+}
+
+#flex-container li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 auto 0 auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #454f57;
+  font-size: 20px;
+  border: solid;
+  width: 5em;
+}
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+}
+a:hover {
+  background-color: #676a6e;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  border: solid #000000;
+}
+
+video {
+  display: inline-flex;
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+.why-style {
+  display: table;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+#why-p {
+  float: left;
+  margin-left: 50px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+#pricing-style {
+  display: table;
+  background-color: #9698a8;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+#pricing-p {
+  float: right;
+  margin-right: 150px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+::placeholder {
+  font-size: 20px;
+}
+#form-container {
+  display: block;
+  margin-left: 50px;
+  margin-right: 150px;
+}
+.form-style{
+  background-color: #fff;
+}
+.input-style {
+  width: 40%;
+  height: 30px;
+}
+.button-style {
+  position: relative;
+  width: 40%;
+  height: 50px;
+  background-color: #454f57;
+  color: #fff;
+  border: solid;
+  font-weight: bold;
+  font-size: 20px;
+  top: 20px;
+ 
+}
+.footer-container {
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 100px;
+}
+.f-style {
+  background-color: #64769c;
+  width: 100%;
+}
+.f-icon {
+  color: #000000;
+}
+#icons a {
+  color: #000;
+}
+#icons a:hover {
+  color: #fff;
+}
+@media (max-width: 40%) {
+  #header {
+    position: static;
+  }
+}
