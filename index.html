@@ -4,46 +4,45 @@
 <main>
 
   <head>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <meta charset="utf-8">
     <title>Product Landing Page</title>
 
-  <body class="background">
-    <header id="header" class="header-style">
-      <div id="nav-container">
+  <body>
+    <!--Nav Bar-->
+      <div id="nav-container" class="navcontainer">
+        <header id="header" style="font-size: 50px;">ROLLS</header>
         <img id="header-img" src="https://png2.cleanpng.com/sh/aa5c55a670e1b5a0b94058584012653f/L0KzQYm3VMA3N5t0iZH0aYP2gLBuTgRwcZ1qjJ95YYDogn77igN0fZYyiNN5ZYKwc73wkL1ieqUyjNHybHX3PcHokPVzNWZme6lrMXG8Q4HoWMQ6NmQ8SKcBOUe5QYa5U8A0PmY9TaMEOUOxgLBu/kisspng-toilet-paper-tissue-paper-clip-art-toilet-paper-5ac7b1a930a849.3705697615230365851993.png" alt="Logo" width="70" height="70">
-        <h1 style="font-size: 50px;">ROLLS</h1>
-
         <div id="flex-container">
           <nav id="nav-bar">
-
             <ul id="nav-list">
-
               <li><a class="nav-link" href="#video-section">Home</a></li>
-
               <li><a class="nav-link" href="#why-section">Why?</a></li>
-
               <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
-
             </ul>
           </nav>
         </div>
       </div>
-    </header>
-    <section id="video-section">
+      <!--Video Section-->
+    <section id="video-section" class="background">
       <div id="video-container">
         <video id="video" controls width="60%" height="30%" src="https://www.youtube.com/watch?v=NiQKvfo3l94" alt="video about why to buy toilet paper"></video>
       </div>
     </section>
-
+      <!--Why Section-->
     <section id="why-section" class="why-style">
-      <div id="why-p">
+      <div class="why-p">
         <p style="padding-bottom: 20px;">Who doesnt like to keep their behind clean with some quality soft tissue?</p>
-        <p style="font-family: open sans condensed;">"10/10 will wipe again!"</p>
-        <p style="font-family: open sans;">- verified Rolls purchaser</p>
+        <span class="rating">
+          <p style="font-family: open sans condensed;">"10/10 will wipe again!"</p>
+          <p style="font-family: open sans;">- verified Rolls purchaser</p>
+        </span>
       </div>
       <img src="https://images.unsplash.com/photo-1584484796952-551ae82af90c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80" alt="Hand holding toilet paper roll" style="width: 200px; height: 250px; float: right; margin-right: 150px; background: ;">
     </section>
+    </div>
+    <!--Pricing Section-->
     <section id="pricing-section">
       <div id="pricing-style">
         <div id="pricing-p">
@@ -58,6 +57,7 @@
         <img src="https://images.unsplash.com/photo-1584556812945-a6830379555b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80" alt="toilet paper in suitcase" style="width: 200px; height: 200px;">
       </div>
     </section>
+    <!--Form Section-->
     <section id="form-section" class="form-style">
       <div id="form-container">
         <form id="form" action="https://www.freecodecamp.com/email-submit">

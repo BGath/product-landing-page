@@ -1,45 +1,114 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  text-decoration: none; 
+  font-size: 1em; 
+  outline: none;
+  }
+  
+  code, kbd, samp, pre, tt, var, textarea, input, select, isindex, listing, xmp, plaintext {
+  font: inherit; 
+  font-size: 1em; 
+  white-space: normal;
+  }
+  
+  dfn, i, cite, var, address, em {
+  font-style: normal;
+  }
+  
+  th, b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  }
+  
+  a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet, table {
+  border: none;
+  }
+  
+  table {
+  border-collapse: collapse; 
+  border-spacing: 0;
+  }
+  
+  caption, th, td, center {
+  text-align: left; 
+  vertical-align: top;
+  }
+  
+  body {
+  line-height: 1; 
+  background: white; 
+  color: black;
+  }
+  
+  q {
+  quotes: "" "";
+  }
+  
+  ul, ol, dir, menu {
+  list-style: none;
+  }
+  
+  sub, sup {
+  vertical-align: baseline;
+  }
+  
+  a {
+  color: inherit;
+  }
+  
+  hr {
+  display: none;
+  } /* we don't need a visual hr in layout */
+  
+  font {
+  color: inherit !important; 
+  font: inherit !important; 
+  color: inherit !important;
+  } /* disables some nasty font attributes in standard browsers */
+  
+  marquee {
+  overflow: inherit !important; 
+  -moz-binding: none;
+  }
+  
+  blink {
+  text-decoration: none;
+  }
+  
+  nobr {
+  white-space: normal;
+  }
+/*Modifications*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
 
 body {
-  width: 100%;
   text-align: center;
-  font-family: lobster;
-}
-.background {
-  background-image: url(https://images.unsplash.com/photo-1584109807991-ebfcd80112a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80);
-  background-size: contain;
-  background-repeat: no-repeat;
   overflow-x: hidden;
-  margin: 0px;
 }
-
-.header-style {
+/*Nav Bar Section*/
+.navcontainer {
   position: sticky;
-  top: 0;
   background-color: #64769c;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  text-align: center;
-  width: 100%;
-  margin: 0 vh;
+  padding: 3%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
   z-index: 1;
+  width: 100%;
 }
-
-@media only screen and (width: 600px) {
-  max-width: 100%;
+@media screen and (max-width: 400px) {
+  
 }
-
 #flex-container li {
   display: inline-block;
   list-style-type: none;
-  margin: 0 auto 0 auto;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 5px;
+  margin: 10px;
   background-color: #454f57;
   font-size: 20px;
   border: solid;
-  width: 5em;
 }
 a:link {
   color: #ffffff;
@@ -52,12 +121,34 @@ a:hover {
   padding-bottom: 12px;
   border: solid #000000;
 }
-
-video {
-  display: inline-flex;
-  margin-top: 100px;
-  padding-bottom: 30px;
+/*Video Section*/
+.background {
+  background-image: url(https://images.unsplash.com/photo-1584109807991-ebfcd80112a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1308&q=80);
+  background-size: contain;
+  width: 100%;
+  max-height: 100vh;
+  height: 70%;
 }
+video {
+  position: relative;
+  top: 70px;
+  width: 640px;
+  height: 360px;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  .background {
+    background-size: 100vw;
+    max-height: 100vh;
+    height: 70%;
+  }
+  video {
+    position: relative;
+    width: 426px;
+    height: 240px;
+  }
+}
+/*Why Section*/
 .why-style {
   display: table;
   background-color: #fff;
@@ -65,11 +156,15 @@ video {
   padding-bottom: 60px;
   width: 100%;
 }
-#why-p {
+.why-p {
   float: left;
   margin-left: 50px;
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 3px;
+  text-align: left;
+}
+.rating {
+  width: 30%;
 }
 #pricing-style {
   display: table;
