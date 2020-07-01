@@ -159,11 +159,17 @@ video {
 }
 #why-header {
   font-size: 40px;
+  text-align: left;
+  float: left;
+  margin: 50px 0px 0px 50px;
+  color: #454f57;
+  line-height: 45px;
 }
 #hand-paper {
 float: right;
 max-width: 600px; 
 background: ;
+border-left: solid #454f57;
 }
 .why-p {
   width: 40%;
@@ -180,25 +186,65 @@ background: ;
     font-size: px;
     margin-left: 50px;
     margin-top: 50px;
-    color: #454f57
+    color: #454f57;
+  }
+  #hand-paper {
+    border-left: none;
   }
 }
 /*Pricing Section*/
-#pricing-style {
+.pricing-style {
   display: table;
-  background-color: #9698a8;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background-color: #676a6e;
+  padding-top: 0px;
+  padding-bottom: 0px;
   width: 100%;
 }
-#pricing-p {
+#pricing-head {
   float: right;
-  margin-right: 150px;
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 40px;
+  text-align: center;
+  width: 40%;
+  color: #fff;
+  margin: 50px 50px 0px 0px;
+}
+#stacked-paper {
+  float: left;
+  max-width: 600px;
+  margin-left: 0px;
+  
 }
 ::placeholder {
   font-size: 20px;
+}
+.price-b-style {
+  color: #64769c;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border: solid #454f57 5px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 700px) {
+  #stacked-paper {
+    display: none;
+  }
+  #pricing-head {
+    font-size: 40px;
+    text-align: center;
+    float: none;
+    margin: auto;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .pricing-style {
+    display: table;
+    background-color: #676a6e;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
 }
 /*Form Section*/
 #form-container {
