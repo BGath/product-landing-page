@@ -1,20 +1,19 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <html>
-<main>
 
   <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <meta charset="utf-8">
     <title>Product Landing Page</title>
-
+  </head>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--Nav Bar-->
       <div id="nav-container" class="navcontainer">
         <header id="header" style="font-size: 50px;">ROLLS</header>
-        <img id="header-img" src="https://png2.cleanpng.com/sh/aa5c55a670e1b5a0b94058584012653f/L0KzQYm3VMA3N5t0iZH0aYP2gLBuTgRwcZ1qjJ95YYDogn77igN0fZYyiNN5ZYKwc73wkL1ieqUyjNHybHX3PcHokPVzNWZme6lrMXG8Q4HoWMQ6NmQ8SKcBOUe5QYa5U8A0PmY9TaMEOUOxgLBu/kisspng-toilet-paper-tissue-paper-clip-art-toilet-paper-5ac7b1a930a849.3705697615230365851993.png" alt="Logo" width="70" height="70">
+        <img id="header-img" src="https://www.netclipart.com/pp/m/310-3104821_toilet-paper-toilet-paper-svg-free.png" alt="Logo" width="70" height="70">
         <div id="flex-container">
           <nav id="nav-bar">
             <ul id="nav-list">
@@ -33,9 +32,7 @@
     </section>
       <!--Why Section-->
     <section id="why-section" class="why-style">
-      <div class="why-p">
         <header id="why-header">Who doesn't like to keep their behind clean with some quality soft tissue?</header> 
-      </div>
       <img id="hand-paper" src="https://images.unsplash.com/photo-1592438224549-98c4f4b46e5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="full roll">
     </section>
     </div>
@@ -51,50 +48,43 @@
         <button id="order-now" class="price-b-style">ORDER NOW!</button>
       </label>
     </section>
-    <!--Form Section-->
-    <section id="form-section" class="form-style">
-      <div id="form-container">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <div>
-            <p style="padding-top: 40px; letter-spacing: 3px; font-size: 20px;">Sign up with your email below and receive toilet paper out the wazoo!</p>
-            <label>
-              <p style="margin-right: 400px; font-size: 20px;">Name</p>
-              <input id="name" type="name" name="name" placeholder="Your name..." class="input-style" required>
-            </label>
-            <label>
-              <p style="margin-right: 400px; font-size: 20px;">Email</p>
-              <input id="email" type="email" name="email" placeholder="ex: cleanbooty4all@awesomerolls.com" pattern="+@globex.com" class="input-style" required>
-            </label>
-            <label>
-              <p style="margin-right: 350px; font-size: 20px;">Phone Number</p>
-              <input id="number" type="" name="number" placeholder="ex: +1234567890" class="input-style">
-            </label>
-            <div>
-            <input id="submit" type="submit" href="https://www.freecodecamp.com/email-submit" class="button-style">
-            </div>
+        <!--Form Section-->
+        <section id="form-section" class="form-style">
+          <div id="form-container">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <header class="form-head">Sign up with your email below and receive toilet paper out the <span class="wazoo">WAZOO!!!</span></header>
+                <label>
+                  <p class="form-label">Name</p>
+                  <input id="name" type="name" name="name" placeholder="ex: Jane Doe" class="input-style" required>
+                </label>
+                <label>
+                  <p class="form-label">Email</p>
+                  <input id="email" type="email" name="email" placeholder="ex: cleanbooty4all@awesomerolls.com" pattern="+@globex.com" class="input-style" required>
+                </label>
+                <label>
+                  <p class="form-label">Phone Number</p>
+                  <input id="number" type="" name="number" placeholder="ex: +1234567890" class="input-style">
+                </label>
+                <div>
+                <input id="submit" type="submit" href="https://www.freecodecamp.com/email-submit" class="button-style">
+                </div>
+            </form>
           </div>
-        </form>
-      </div>
-    </section>
-    <!--Footer Section-->
-    <div class="footer-container">
-    <footer class="f-style" style="text-align: center; padding: 2px 0px 2px 0px;">
-      
-        <p>Project created by BGath</p>
-        <!--Icon Links-->
-        <div id="icons">
-          <a href="https://www.freecodecamp.org/bgath" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>
-          <a href="https://github.com/BGath" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a href="https://codepen.io/bgath" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
-        </div>
-        <!--Disclaimer-->
-        <p><b>Disclaimer:</b> I do not own the art or video displayed on this project. All rights go to their respective owners.</p>
-    </footer>
-      </div>
-
+        </section>
+  <!--Icon Section-->
+  <section id="icon-link-section" class="icon-section-style">
+    <div id="icons">
+        <a href="https://www.freecodecamp.org/bgath" target="_blank"><i class="fab fa-free-code-camp fa-6x"></i></a>
+        <a href="https://github.com/BGath" target="_blank"><i class="fab fa-github fa-6x"></i></a>
+        <a href="https://codepen.io/bgath" target="_blank"><i class="fab fa-codepen fa-6x"></i></a>
+    </div>
+  </section>
+  <!--Footer Section-->
+ <div class="footer-container">
+  <footer class="f-style">
+      <p>Project created by BGath</p>
+  <!--Disclaimer-->
+      <p><b>Disclaimer:</b> I do not own the art or video displayed on this project. All rights go to their respective owners.</p>
+  </footer>
   </body>
-  </head>
-
-</main>
-
 </html>

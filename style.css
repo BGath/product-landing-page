@@ -78,10 +78,15 @@
   nobr {
   white-space: normal;
   }
-/*Modifications*/
+/*Links*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
-
+/*Modifications*/
+html{
+  max-height: 5000px;
+height: 100%;
+width: 100%;
+}
 body {
   text-align: center;
   overflow-x: hidden;
@@ -161,25 +166,40 @@ video {
   font-size: 40px;
   text-align: left;
   float: left;
-  margin: 50px 0px 0px 50px;
+  margin: 80px 0px 0px 50px;
   color: #454f57;
-  line-height: 45px;
+  line-height: 60px;
+  background: #e1d9fc;
 }
 #hand-paper {
 float: right;
-max-width: 600px; 
+max-width: 500px; 
 background: ;
 border-left: solid #454f57;
 }
-.why-p {
-  width: 40%;
-}
-@media screen and (max-width: 700px) {
-  .why-style {
-    background-image: url(https://images.unsplash.com/photo-1592438224549-98c4f4b46e5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+@media screen and (max-width: 600px) {
+  #hand-paper {
+    display: none;
   }
-  .why-p {
+  .why-style {
+    display: table;
+    background: #e1d9fc;
+  }
+  #why-header {
+    font-size: 40px;
+    text-align: center;
+    float: none;
+    margin: auto;
+    margin-top: 50px;
     width: 100%;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .why-p {
+    width: 50%;
+    margin: 0px;
+    float: left;
   }
   #why-header {
     width: 50%;
@@ -190,6 +210,9 @@ border-left: solid #454f57;
   }
   #hand-paper {
     border-left: none;
+  }
+  .why-style {
+    background: #e1d9fc;
   }
 }
 /*Pricing Section*/
@@ -250,16 +273,15 @@ border-left: solid #454f57;
 #form-container {
   margin: auto;
   background-image: url(https://images.unsplash.com/photo-1586791709195-807850ca6c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-  background: contain; }
-.form-style{
-  background-color: #fff;
+  background: contain;
+  padding: 100px;
+  line-height: 40px;
 }
 .input-style {
-  width: 40%;
-  height: 30px;
+  width: 350px;
+  height: 35px;
 }
 .button-style {
-  position: relative;
   width: 40%;
   height: 50px;
   background-color: #454f57;
@@ -267,29 +289,109 @@ border-left: solid #454f57;
   border: solid;
   font-weight: bold;
   font-size: 20px;
-  top: 20px;
- 
+  margin-top: 40px;
 }
+.form-head {
+  line-height: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #64769c;
+  text-align: center;
+}
+.form-label {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 350px;
+  color: #676a6e;
+  letter-spacing: 2px;
+}
+.wazoo {
+  color: #64769c; 
+  font-size: 45px;
+}
+@media screen and (max-width: 700px) {
+  form {
+    position: relative;
+    top: -45px;
+  }
+  #form-container{
+    padding-bottom: 0px;
+  }
+  .form-head {
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #64769c;
+    text-align: center;
+    line-height: 60px;
+  }
+  .button-style {
+    width: 40%;
+    height: 50px;
+    background-color: #454f57;
+    color: #fff;
+    border: solid;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .form-label {
+    font-size: 30px;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #fff;
+  }
+  .wazoo {
+    color: #fff;
+    font-size: 45px;
+  }
+}
+/*Icon Link Section*/
+.icon-section-style {
+    background-color: #676a6e;
+    padding: 100px;
+}
+#icons a {
+  color: #000000;
+  margin: 70px;
+}
+#icons a:hover {
+  border: none;
+  color: #fff;
+}
+#icons p {
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  #icons a {
+    font-size: 10px;
+    margin: 0px 15px 0px 15px;
+    color: #000000;
+    display: inline-flex;
+  }
+  #icons a:hover {
+    color: #fff;
+  
+  }
+}
+/*Footer Section*/
 .footer-container {
   display: block;
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   max-width: 100%;
-  position: relative;
-  top: 100px;
 }
 .f-style {
   background-color: #64769c;
   width: 100%;
-}
-.f-icon {
-  color: #000000;
-}
-#icons a {
-  color: #000;
-}
-#icons a:hover {
-  color: #fff;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
 }
 @media (max-width: 40%) {
   #header {
